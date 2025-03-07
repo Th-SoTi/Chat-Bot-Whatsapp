@@ -60,7 +60,7 @@ function showMenu(sender, client) {
   👋 Olá, como vai?
 
   Eu sou o *assistente virtual* da
-  *Ame Mais Motel - Valparaíso.*
+  *Motel (escolha o nome)*
 
   Posso te ajudar?
   -----------------------------------
@@ -364,9 +364,9 @@ function handleLocalizaOption(sender, client) {
   const localMessage =
 `*📍 Aqui está o endereço do nosso motel:*
 
-https://maps.app.goo.gl/ptp4MZrt53vZtUFQA
+(link localização)
 
-*Endereço:* Parque Esplanada II, Valparaíso de Goiás - GO, 72878-039`;
+*Endereço:* ...`;
   sendMessage(localMessage, sender, client);
   sendMoreInfoPromptWithDelay(sender, client);
   userStage[sender] = 'localiza_follow_up';
